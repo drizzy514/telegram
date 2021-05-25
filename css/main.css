@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+body{
+   margin: 0;
+   padding:  5px 25px;
+}
+.hamburger-btn{
+    outline: none;
+    background-color: #fff;
+    border: none;
+    margin-right: 12px;
+}
+.hamburger-btn::before,
+.hamburger__inner,
+.hamburger-btn::after{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 3px;
+    background-color: #A8A8A8;
+    margin-top:4px;
+}
+.content-bg{
+    background: url(../image/Screenshot_1.png) no-repeat center center;
+    width: 1159px;
+    height: 669px;
+}
+@media screen and (max-width:768px){
+    .content-bg{
+        display: none;
+    }
+}
+.content{
+    display: none;
+}
+.active{
+    display: block;
+}
+.content-2{
+    display: none;
+}
+.content-active{
+    display: block;
+}
+.canvas-header{
+    background: url(../image/coffe-tablet.jpg) no-repeat center center;
+    background-size: cover;
+}
+.modal-backdrop{
+    width: 0;
+    height: 0;
+}
+.contact-input{
+    border:none;
+    outline: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    opacity: 0.8;
+    width: 100%;
+}

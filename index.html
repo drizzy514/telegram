@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>telegram</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+ <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-md-3 ">
+      <div class="d-flex align-items-center">
+
+        <button type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" class="hamburger-btn">
+          <span class="hamburger__inner"></span>
+        </button>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas">
+          <div class="canvas-header">
+
+            <div class="offcanvas-header">
+
+              <button class="btn"><img src="./image/photo_2021-05-06_16-26-16.jpg" class="rounded-circle" width="50"
+                  height="50" alt=""></button>
+              <button class="btn" data-bs-dismiss="offcanvas"><i class="fas fa-arrow-right" style="font-size: 32px; color: #fff;"> </i></button>
+            </div>
+
+
+            <button type="button" class="btn text-white " aria-expanded="false" aria-controls="collapse"
+              data-bs-toggle="collapse" data-bs-target="#collapse"> _khakimjan_
+              <br>
+              +998 93 533 65 53
+            </button>
+
+
+          </div>
+          <div class="collapse" id="collapse">
+            <div class="p-4">
+
+              <button type="button" class="btn d-flex align-items-center ">
+
+                <img src="./image/photo_2021-05-06_16-26-16.jpg" width="30" height="30" class="rounded-circle" alt="">
+                <h6 class="ms-3">_khakimjan_</h6>
+              </button>
+            
+              <button type="button" class="btn d-flex align-items-center">
+
+                <i class="fas fa-user-circle" style="font-size:28px;"></i>
+                <h6 class="ms-3">Add account</h6>
+              </button>
+            </div>
+            
+          </div>
+          <div class="offcanvas-body">
+              <ul class=" list-unstyled">
+                <li class=" ms-5">
+                 <button data-bs-toggle="modal" data-bs-target="#groupModal" type="button" class="btn d-flex align-items-center">
+
+                   <i class="fas fa-user-friends" style=" color: #DADADA; font-size: 24px;"></i>
+                   <h5 class="ms-3 mt-3">New group</h5>
+                 </button>
+                 <div class="modal fade show" tabindex="-1" id="groupModal">
+                  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                       <h5 class="modal-title">Save a new group</h5>
+                       <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                      </div>
+                      <div class="modal-body pt-3 pb-3 d-flex align-items-center ">
+                       <button type="button" class="btn btn-primary rounded-circle p-4">
+                         <i class="fas fa-camera" style="font-size:48px; color: #fff;"></i>
+                       </button>
+                       <div class="form-floating ms-4 w-100">
+                        <input type="email" class="p-2 form-control border-primary rounded-3 "  placeholder="name@example.com" id="floatingInput">
+                        <label for="floatingInput" class="text-primary">Group name</label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-outline-secondary">Next</button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                </li>
+                <li class=" ms-5">
+                 <button data-bs-toggle="modal" data-bs-target="#modalChannel" type="button" class="btn d-flex align-items-center">
+
+                   <img src="image/audio_24px.png" alt="">
+                   <h5 class="ms-3 mt-3">New channel</h5>
+                 </button>
+                 <div class="modal fade show" tabindex="-1" id="modalChannel">
+                  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                       <h5 class="modal-title"> Create new channel</h5>
+                      
+                      </div>
+                      <div class="modal-body pt-3 pb-3 d-flex align-items-center ">
+                       <button type="button" class="btn btn-primary rounded-circle p-4">
+                         <i class="fas fa-camera" style="font-size:48px; color: #fff;"></i>
+                       </button>
+                       <div class="form-floating ms-4 w-100">
+                        <input type="email" class="p-2 form-control border-primary rounded-3 "  placeholder="name@example.com" id="floatingInput">
+                        <label for="floatingInput" class="text-primary">Channel name</label>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-outline-secondary">Create</button>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+                </li>
+                <li class=" ms-5">
+                 <button type="button" data-bs-toggle="modal" data-bs-target="#contactModal" class="btn d-flex align-items-center">
+
+                   <i class="fas fa-user" style=" color: #DADADA; font-size: 24px;"></i>
+                   <h5 class="ms-3 mt-3">Contacts</h5>
+                 </button>
+                 <div class="modal fade show" tabindex="-1" id="contactModal">
+                  <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header d-flex align-items-start flex-column">
+                       <h5 class="modal-title">Contacts</h5>
+                       <div class=" mt-4 d-flex align-items-center">
+                        <i class="fas fa-search" style="color: #DADADA; font-size: 20px;"></i>
+                        <input type="text" class="contact-input" placeholder="Search">
+                        
+                      </div>  
+                      </div>
+                      <div class="modal-body pt-3 pb-3 d-flex flex-column ">
+                  
+                    <hr>
+                    <ul class="list-unstyled">
+                      <li class=" ms-3 d-flex align-items-center">
+                        <img src="image/photo_2021-05-02_10-47-20.jpg"  class="rounded-circle" width="50" height="50" alt="">
+                        <p class=" d-flex flex-column fs-18 ms-3">Abdujalil 
+                        <span style="font-size: 14px; opacity: 0.7;">Last seen recently</span>  
+                        </p>
+                      </li>
+                      <li class=" ms-3 mt-3 d-flex align-items-center">
+                        <img src="image/farruh-photo-glavniy.jpg"  class="rounded-circle" width="50" height="50" alt="">
+                        <p class=" d-flex flex-column fs-18 ms-3">Faruhh
+                        <span style="font-size: 14px; opacity: 0.7;">Last seen recently</span>  
+                        </p>
+                      </li>
+                      <li class=" ms-3 mt-3 d-flex align-items-center">
+                        <img src="image/photo_2020-12-11_06-25-19.jpg"  class="rounded-circle" width="50" height="50" alt="">
+                        <p class=" d-flex flex-column fs-18 ms-3">#Addham 
+                        <span style="font-size: 14px; opacity: 0.7;">Last seen recently</span>  
+                        </p>
+                      </li>
+                      <li class=" ms-3 mt-3 d-flex align-items-center">
+                        <img src="image/glavniy-photo-islom.jpg"  class="rounded-circle" width="50" height="50" alt="">
+                        <p class=" d-flex flex-column fs-18 ms-3"> Islom
+                        <span style="font-size: 14px; opacity: 0.7;">Last seen 3 hours ago</span>  
+                        </p>
+                      </li>
+                      <li class=" ms-3 mt-3 d-flex align-items-center">
+                        <img src="image/photo_2021-04-26_15-36-44.jpg"  class="rounded-circle" width="50" height="50" alt="">
+                        <p class=" d-flex flex-column fs-18 ms-3">Ukam
+                        <span style="font-size: 14px; opacity: 0.7;">Last seen 23.05.21 </span>  
+                        </p>
+                      </li>
+                      <li class=" ms-3 mt-3 d-flex align-items-center">
+                        <img src="image/photo_2020-12-19_10-37-06.jpg"  class="rounded-circle" width="50" height="50" alt="">
+                        <p class=" d-flex flex-column fs-18 ms-3">Akmal
+                        <span style="font-size: 14px; opacity: 0.7;">Last seen recently</span>  
+                        </p>
+                      </li>
+                      <li class=" ms-3 mt-3 d-flex align-items-center">
+                        <img src="image/photo_2020-12-20_00-16-52.jpg"  class="rounded-circle" width="50" height="50" alt="">
+                        <p class=" d-flex flex-column fs-18 ms-3">Azim kurs
+                        <span style="font-size: 14px; opacity: 0.7;">Last seen recently</span>  
+                        </p>
+                      </li>
+                      <li class=" ms-3 mt-3 d-flex align-items-center">
+                        <img src="image/coffe-tablet.jpg"  class="rounded-circle" width="50" height="50" alt="">
+                        <p class=" d-flex flex-column fs-18 ms-3">Behruz kurs
+                        <span style="font-size: 14px; opacity: 0.7;">Last seen recently</span>  
+                        </p>
+                      </li>
+                   
+                    </ul>
+                    </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-primary">ADD CONTACT</button>
+                    <button type="button" data-bs-dismiss="modal" class="btn btn-outline-primary">CLOSE</button>
+                  </div>
+                    </div>
+                  </div>
+                </div>
+                </li>
+                <li class=" ms-5">
+                 <button data-bs-toggle="modal" data-bs-target="#callModal" type="button" class="btn d-flex align-items-center">
+
+                   <i class="fas fa-phone " style=" color: #DADADA; font-size: 24px;"></i>
+                   <h5 class=" mt-3 ms-3">Calls</h5>
+                 </button>
+                 <div class="modal fade " id="callModal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Calls</h5>
+                        <button type="button" data-bs-dismiss="modal" class="btn-close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="text">
+                          <p class="text-center mt-5 text-warning">
+                            You have no calls</p>
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-outline-primary" data-bs-dismiss="modal">Close</button>
+                        <button class="btn btn-outline-primary">Add call</button>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                </li>
+                <li class=" ms-5">
+                 <button type="button" class="btn d-flex align-items-center">
+
+                   <i class="fas fa-cog" style=" color: #DADADA; font-size: 24px;"></i>
+                   <h5 class="ms-3 mt-3">Settings</h5>
+                 </button>
+                </li>
+              
+
+              </ul>
+          </div>
+          <div class="d-flex flex-column ms-auto pe-4 pb-3">
+            <a href="#" style="font-size:18px;" class="link-dark">Telegram mobile</a>
+            <a href="#" style="font-size:18px;" class="link-secondary">Version 2.7.4 - About</a>
+
+          </div>
+        </div>
+        <input type="text" placeholder="search..." class="form-control">
+      </div>
+
+
+      <!-- users section -->
+
+
+      <div class="ps-3 pt-4 d-flex align-items-center ">
+        <button type="button" data-bs-toggle="pill" data-bs-target="#v-pills-home" aria-controls="v-pills-home"
+          class="btn d-flex align-items-center user-btn">
+          <img src="image/photo_2021-05-02_10-47-20.jpg" width="50" height="50" class="rounded-circle me-2" alt="">
+          <div class="d-flex flex-column">
+            <h5 class="m-0">Jalil JG</h5>
+
+            <p class="m-0 text-secondary"> You:qalesa </p>
+
+          </div>
+        </button>
+        <div class="d-flex flex-column ms-auto">
+          <p class="m-0">13:30</p>
+          <span class="badge rounded-pill bg-secondary">5</span>
+        </div>
+      </div>
+      <div class="ps-3 pt-4 d-flex align-items-center ">
+        <button type="button" class="btn d-flex align-items-center">
+          <img src="image/na'jot-talim-photo.jpg" width="50" height="50" class="rounded-circle me-2" alt="">
+          <div class="d-flex flex-column">
+            <h5 class="m-0">Na'jot Talim guruhi</h5>
+
+            <p class="m-0 text-secondary w-25">You:salom </p>
+
+          </div>
+        </button>
+        <div class="d-flex flex-column ms-auto">
+          <p class="m-0">13:30</p>
+          <span class="badge rounded-pill bg-secondary">1334</span>
+        </div>
+      </div>
+      <div class="ps-3 pt-4 d-flex align-items-center ">
+        <button type="button" class="btn d-flex align-items-center user-islom">
+          <img src="image/glavniy-photo-islom.jpg" width="50" height="50" class="rounded-circle me-2" alt="">
+          <div class="d-flex flex-column ">
+            <h5 class="m-0 w-25">Islom</h5>
+
+            <p class="m-0 text-secondary w-25"> You:Voice message </p>
+
+          </div>
+        </button>
+        <div class="d-flex flex-column ms-auto">
+          <p class="m-0">13:30</p>
+          <span class="badge rounded-pill bg-secondary">2</span>
+        </div>
+      </div>
+      <div class="ps-3 pt-4 d-flex align-items-center ">
+        <button type="button" class="btn d-flex align-items-center">
+          <img src="image/photo_2021-05-14_04-06-38.jpg" width="50" height="50" class="rounded-circle me-2" alt="">
+          <div class="d-flex flex-column">
+            <h5 class="m-0">Futbol Tv</h5>
+
+            <p class="m-0 text-secondary w-25">Album</p>
+
+          </div>
+        </button>
+        <div class="d-flex flex-column ms-auto">
+          <p class="m-0">13:30</p>
+          <span class="badge rounded-pill bg-secondary">176</span>
+        </div>
+      </div>
+      <div class="ps-3 pt-4 d-flex align-items-center ">
+        <button type="button" class="btn d-flex align-items-center">
+          <img src="image/farruh-photo-glavniy.jpg" width="50" height="50" class="rounded-circle me-2" alt="">
+          <div class="d-flex flex-column">
+            <h5 class="m-0">Farruh</h5>
+
+            <p class="m-0 text-secondary"> Qatasa </p>
+
+          </div>
+        </button>
+        <div class="d-flex flex-column ms-auto">
+          <p class="m-0">13:30</p>
+          <span class="badge rounded-pill bg-secondary">2</span>
+        </div>
+      </div>
+      <div class="ps-3 pt-4 d-flex align-items-center ">
+        <button type="button" class="btn d-flex align-items-center">
+          <img src="image/web-dasturlash-group-photo.jpg" width="50" height="50" class="rounded-circle me-2" alt="">
+          <div class="d-flex flex-column">
+            <h5 class="m-0 w-100">Web dasturlash</h5>
+
+            <p class="m-0 text-secondary">You:hamburger btn...</p>
+
+          </div>
+        </button>
+        <div class="d-flex flex-column ms-auto">
+          <p class="m-0">13:30</p>
+          <span class="badge rounded-pill bg-secondary">19</span>
+        </div>
+      </div>
+      <div class="ps-3 pt-4 d-flex align-items-center ">
+        <button type="button" class="btn d-flex align-items-center">
+          <img src="image/vkm-bot.jpg" width="50" height="50" class="rounded-circle me-2" alt="">
+          <div class="d-flex flex-column">
+            <h5 class="m-0">VKM bot</h5>
+
+            <p class="m-0 text-secondary"> You:shoxrux </p>
+
+          </div>
+        </button>
+        <div class="d-flex flex-column ms-auto">
+          <p class="m-0">13:30</p>
+          <span class="badge rounded-pill bg-secondary">58</span>
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+
+    <div class="col-md-9 overflow-hidden ">
+      <div class="content-bg position-relative">
+        <div class="content">
+          <div class="tab-content" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+
+
+              <div class="bg-white d-flex align-items-center ">
+                <button type="button" class="btn d-flex flex-column ">
+                  <p class="m-0 w-50">Jalil JG</p>
+
+                  <p class="d-flex align-items-center">
+
+                    <span class="spinner-border text-secondary spinner-border-sm"></span>
+                    <span class="text-secondary">connecting</span>
+
+                  </p>
+
+                </button>
+
+                <div class="d-flex align-items-center ms-auto pe-5">
+                  <button type="button" class="btn"><img src="image/search_24px.png" alt=""></button>
+                  <button type="button" class="btn"><img src="image/phone_24px.png" alt=""></button>
+                  <button type="button" class="btn"><img src="image/move_stock_24px.png" alt=""></button>
+                  <button type="button" class="btn"><img src="image/menu_vertical_24px.png" alt=""></button>
+                </div>
+              </div>
+
+              <div class="input-group border-0 position-absolute bottom-0 pe-4">
+                <button type="button" class="btn bg-white"><img src="image/file_24px.png" alt=""></button>
+                <input type="text" class="form-control border-0 p-3 w-50" placeholder="write a message..."
+                  aria-label="Recipient's username with two button addons">
+                <button type="button" class="btn bg-white w-0"><img src="image/send_letter_24px.png" alt=""></button>
+                <button class="btn w-0 bg-white" type="button"><img src="image/happy_24px.png" alt=""></button>
+                <button class="btn bg-white w-0" type="button"><img src="image/microphone_24px.png" alt=""></button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="content-2">
+          <div class="bg-white d-flex align-items-center ">
+            <button type="button" class="btn d-flex flex-column ">
+              <p class="m-0 w-50">Islom</p>
+
+              <p class="d-flex align-items-center">
+
+                <span class="spinner-border text-secondary spinner-border-sm"></span>
+                <span class="text-secondary">connecting</span>
+
+              </p>
+
+            </button>
+
+            <div class="d-flex align-items-center ms-auto pe-5">
+              <button type="button" class="btn"><img src="image/search_24px.png" alt=""></button>
+              <button type="button" class="btn"><img src="image/phone_24px.png" alt=""></button>
+              <button type="button" class="btn"><img src="image/move_stock_24px.png" alt=""></button>
+              <button type="button" class="btn"><img src="image/menu_vertical_24px.png" alt=""></button>
+            </div>
+          </div>
+
+          <div class="input-group border-0 position-absolute bottom-0 pe-4">
+            <button type="button" class="btn bg-white"><img src="image/file_24px.png" alt=""></button>
+            <input type="text" class="form-control border-0 p-3 w-50" placeholder="write a message..."
+              aria-label="Recipient's username with two button addons">
+            <button type="button" class="btn bg-white w-0"><img src="image/send_letter_24px.png" alt=""></button>
+            <button class="btn w-0 bg-white" type="button"><img src="image/happy_24px.png" alt=""></button>
+            <button class="btn bg-white w-0" type="button"><img src="image/microphone_24px.png" alt=""></button>
+          </div>
+        </div>
+      </div>
+   
+
+    </div>
+
+
+  </div>
+
+
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg></script>
+
+
+ <script src="js/bootstrap.bundle.min.js"></script>
+
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
